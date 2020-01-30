@@ -1,0 +1,21 @@
+/*@import "http://fonts.googleapis.com/css?family=Droid+Serif";*/
+/* Above line is used for online google font */
+h2 {
+text-align:center
+}
+hr {
+margin-bottom:-10px
+}
+div.main {
+width:960px;
+height:655px;
+margin:50px auto;
+font-family:'Droid Serif',serif
+}
+div.first {
+float:left;
+/*padding:15px 50px;*/
+background:#f8f8ff;
+box-shadow:0 0 10px gray;
+margin:20px
+}
