@@ -45,7 +45,7 @@ class Invoice {
 	/**
 	 * Create request using sms as notification mode.
 	 *
-	 * @return	object
+	 * @return	string|false — a JSON encoded string on success or FALSE on failure.
 	 *
 	 */
 	public function CreateSmsRequest() {
@@ -64,7 +64,7 @@ class Invoice {
 	/**
 	 * Create request using email as notification mode.
 	 *
-	 * @return	object
+	 * @return	string|false — a JSON encoded string on success or FALSE on failure.
 	 *
 	 */
 	public function CreateEmailRequest() {
@@ -83,7 +83,7 @@ class Invoice {
 	/**
 	 * Create invoice request that will generate url of payment.
 	 *
-	 * @return	object
+	 * @return	string|false — a JSON encoded string on success or FALSE on failure.
 	 *
 	 */
 	public function CreateLinkRequest() {
@@ -103,7 +103,7 @@ class Invoice {
 	 * Sends invoice status against transaction reference passed to it that can be captured from creation response.
 	 *
 	 * @param   string  $transactionReference The transaction reference for which we are going to query the status of invoice
-	 * @return	object
+	 * @return	string|false — a JSON encoded string on success or FALSE on failure.
 	 *
 	 */
 	public function SendInvoiceStatusRequest($transactionReference) {
